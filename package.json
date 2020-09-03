@@ -1,6 +1,6 @@
 {
-  "name": "ngx-google-analytics-sdk",
-  "version": "0.0.0",
+  "name": "@khoa002/ngx-google-analytics-sdk",
+  "version": "1.0.8",
   "scripts": {
     "ng": "ng",
     "prestart": "npm run build",
@@ -9,9 +9,10 @@
     "test": "ng test ngx-google-analytics --browsers=ChromeHeadless --watch=false",
     "test:dev": "ng test ngx-google-analytics",
     "lint": "ng lint ngx-google-analytics",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepare": "npm run build"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^8.0.2",
     "@angular/common": "^8.0.2",
