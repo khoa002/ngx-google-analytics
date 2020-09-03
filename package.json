@@ -1,6 +1,6 @@
 {
-  "name": "ngx-google-analytics-sdk",
-  "version": "0.0.0",
+  "name": "@khoa002/ngx-google-analytics-sdk",
+  "version": "1.0.7",
   "scripts": {
     "ng": "ng",
     "prestart": "npm run build",
@@ -12,7 +12,7 @@
     "e2e": "ng e2e",
     "prepare": "npm run build"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/cli": "~9.1.8",
     "@angular/animations": "^9.1.11",
@@ -50,5 +50,17 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.8.3"
-  }
+  },
+  "description": "An easy implementation to track ga on angular8+ apps.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoa002/ngx-google-analytics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khoa002/ngx-google-analytics/issues"
+  },
+  "homepage": "https://github.com/khoa002/ngx-google-analytics#readme"
 }
