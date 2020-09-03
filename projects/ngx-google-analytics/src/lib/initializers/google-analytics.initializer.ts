@@ -64,7 +64,11 @@ export function GoogleAnalyticsInitializer(
     settings.initCommands = [ ...initialCommands, ...(settings.initCommands || []) ];
 
     for (const command of settings.initCommands) {
-      gtag(command.command, ...command.values);
+      if (command.command === 'config' && settings.additionalConfigSetupSettings) {
+        gtag(command.command, settings.trackingCode, settings.additionalConfigSetupSettings);
+      } else {
+        gtag(command.command, ...command.values);
+      }
     }
 
     const s: HTMLScriptElement = document.createElement('script');

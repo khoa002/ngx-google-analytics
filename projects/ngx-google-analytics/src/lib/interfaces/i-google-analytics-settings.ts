@@ -12,4 +12,6 @@ export interface IGoogleAnalyticsSettings {
   uri?: string;
   /** If true, trace GA tracking errors on production mode */
   ennableTracing?: boolean;
+  /** Additional settings to be passed to config at setup */
+  additionalConfigSetupSettings?: {};
 }
